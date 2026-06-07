@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="so">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Shareeca</title>
+    <link rel="stylesheet" href="siya.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>school-shareeca</h1>
+
+    <!-- Navigation -->
+    <div class="menu">
+        <button onclick="showSection('home')">Home</button>
+        <button onclick="showSection('about')">About</button>
+        <button onclick="showSection('news')">News</button>
+        <button onclick="showSection('contact')">Contact Us</button>
+    </div>
+
+    <!-- Sections -->
+    <div id="home" class="card active">
+        <h2>Home</h2>
+        <p>
+            kusoo dhawaaw iskulkka lagu barto manhajka iyo shareecada islamka
+        </p>
+    </div>
+
+    <div id="about" class="card">
+        <h2>About</h2>
+        <p>
+            Iskuulkaan wuxuu diiradda saaraa barashada Qur'aanka, xadiiska,
+            iyo shareecada Islaamka si hab casri ah.
+        </p>
+    </div>
+
+    <div id="news" class="card">
+        <h2>News</h2>
+        <p>
+            Wararka cusub ee iskuulka halkaan ayaad ka heli doontaa.
+        </p>
+    </div>
+
+    <div id="contact" class="card">
+        <h2>Contact Us</h2>
+        <p>
+            Email: info@school.com <br>
+            Phone: +252 61 xxx xxxx
+        </p>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        All Copyright by Aamina Mahad Axmed
+    </footer>
+
+</div>
+
+<script>
+function showSection(id) {
+    let sections = document.querySelectorAll('.card');
+    sections.forEach(sec => sec.classList.remove('active'));
+
+    document.getElementById(id).classList.add('active');
+}
+</script>
+
+</body>
+</html>
